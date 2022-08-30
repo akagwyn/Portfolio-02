@@ -1,0 +1,165 @@
+body .grid-photos-biblioteca {
+  display: -ms-grid;
+  display: grid;
+  padding: 2% 5% 5% 5%;
+  gap: 1rem;
+}
+
+body .grid-photos-biblioteca img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-photos-biblioteca {
+    -ms-grid-columns: (2fr)[5];
+        grid-template-columns: repeat(5, 2fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .grid-photos-biblioteca img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+  }
+  .grid-photos-biblioteca .vertical {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .grid-photos-biblioteca .horizontal {
+    grid-column: span 2;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #ffffff;
+  font-family: 'Hind', sans-serif;
+  height: 100%;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 2.5% 0.5rem 2.5%;
+}
+
+body nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: clamp(0.2rem, 4vw, 3rem);
+}
+
+body nav .title {
+  font-weight: 600;
+}
+
+body .grid-photos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .grid-photos .grid-item {
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  margin: 2.5%;
+}
+
+body .grid-photos .grid-item:hover {
+  background-color: black;
+}
+
+body .grid-photos .grid-item:hover img {
+  opacity: 60%;
+}
+
+body .grid-photos .grid-item:hover .image-title {
+  color: white;
+}
+
+body .grid-photos .grid-item:active {
+  background-color: black;
+}
+
+body .grid-photos .grid-item:active img {
+  opacity: 70%;
+}
+
+body .grid-photos .grid-item .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .grid-photos .grid-item .image-title {
+  color: transparent;
+  position: absolute;
+  font-size: 1rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  body .container nav {
+    padding: 0 5% 0 5%;
+    margin: 5rem 0 2rem 0;
+  }
+  body .container nav a {
+    font-size: clamp(1rem, 1vw, 2rem);
+  }
+  body .grid-photos {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 2.5% 0 2.5%;
+    width: auto;
+  }
+  body .grid-photos .grid-item {
+    cursor: pointer;
+    width: 20%;
+  }
+  body .grid-photos .grid-item .image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .grid-photos .grid-item .image-title {
+    font-size: 1.5rem;
+    padding: 0 .5rem 0 .5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

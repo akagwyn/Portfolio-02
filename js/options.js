@@ -7,10 +7,17 @@ function agregarGaleria() {
     })
 }
 
+function mobileGallery() {
+  return document.addEventListener("DOMContentLoaded", function(event) {
+    Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'),
+    {linkImages:false, imageSize: 'contain',fullScreen: true})
+  })
+}
+
 if (mql === true) {
     agregarGaleria()
   } else {
-    null
+    mobileGallery()
 }
 
 console.log(mql)

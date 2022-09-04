@@ -2,12 +2,32 @@
 
 
     body {
-        overflow-x: auto;
-        overflow-y: auto;
+        // overflow-x: auto;
+        // overflow-y: auto;
         // height: 100vh;
         // width: 100vw;
         
-        
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            margin: auto;
+            padding: 3rem 0 3rem 0;
+            .titulo {
+                text-align: left;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: 2rem;
+
+            }
+
+            .descripcion {
+                text-align: left;
+                width: 50vw;
+                margin: auto;
+                width: auto;
+            }
+        }
         .container {
 
             nav {
@@ -21,7 +41,6 @@
             }
         }
         .grid-photos {
-            position: absolute;
             flex-direction: row;
             flex-wrap: wrap;
             
@@ -46,28 +65,16 @@
                 
             }
             
-            // .top-left {
-            //     margin-top: 0;
-            //     margin-left: 0;
-            // }
-            // .top {
-            //     margin-top: 0;
-            // }
-
-            // .top-right {
-            //     margin-top: 0;
-            //     margin-right: 0;
-            // }
-
-            // .bottom-left {
-            //     margin-bottom: 0;
-            //     margin-left: 0;
-            // }
-
-            // .bottom {
-            //     margin-bottom: 0;
-            // }
+           
+            
+        }
+        footer {
+            p {
+                padding: 2rem 0 2rem 0;
+            }
         }
     }
+
+
 }
 

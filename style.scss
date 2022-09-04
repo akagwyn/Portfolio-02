@@ -7,30 +7,53 @@
     
 }
 
+a {
+    text-decoration: none;
+}
 body {
     position: relative;
-    background-color: #ffffff ;
+    background-color: #fafaf8 ;
     font-family: 'Hind', sans-serif;
+    // font-family: 'Helvetica', sans-serif;
     height: 100%;
         
     nav {
         display: flex;
         justify-content: space-between;
-        margin: 1rem 2.5% 0.5rem 2.5%;
+        margin: 1rem 5% 0.5rem 5%;
 
         a {
             color: rgb(0, 0, 0);
-            text-decoration: none;
             font-weight: 300;
             font-size: clamp(0.2rem,4vw,3rem);
         }
-        .title {
+        .name {
             font-weight: 600;
         }
     }
      
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-left: 5%;
+        padding: 3rem 0 2rem 0;
+        .title {
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: .5rem;
+        }
+
+        .description {
+            text-align: left;
+            margin: auto;
+            width: auto;
+        }
+    }
 
     .grid-photos {
+        z-index: 1;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -43,25 +66,7 @@ body {
             position: relative;
             overflow: hidden;
             width: 45%;
-            margin: 2.5%;
-
-                &:hover {
-                    background-color: black;
-                    img {
-                    opacity: 60%;
-                    }
-                    .image-title{
-                    color: white;
-                    }
-                }
-
-                &:active {
-                    background-color: black;
-                    img{
-                        opacity: 70%;
-                    
-                    }
-                }
+            margin: 2.5%;    
 
             .image {
              // display: block;
@@ -80,10 +85,95 @@ body {
                 transform: translate(-50%, -50%);
                 width: 100%;
                 text-align: center;
+                padding: 0 .5rem 0 .5rem;
             }
+
+            
+        }
+
+        .biblioteca:hover {
+            background-color: rgb(42, 40, 70);
+            img {
+                opacity: 60%;
+            }
+            .image-title{
+                color: white;
+            }
+        }
+        .cordoba:hover {
+            background-color: rgba(43, 92, 56, 0.89);
+            img {
+                opacity: 60%;
+            }
+            .image-title{
+                color: white;
+            }
+        }
+        .arquitectura:hover {
+            background-color: rgb(42, 40, 70);
+            img {
+                opacity: 60%;
+            }
+            .image-title{
+                color: white;
+            }
+        }
+        .buenos-aires:hover {
+            background-color: rgba(109, 109, 76, 0.774);
+            img {
+                opacity: 60%;
+            }
+            .image-title{
+                color: white;
+            }
+        }
+        .interiores:hover {
+            background-color: rgba(70, 70, 40, 0.753);
+            img {
+                opacity: 60%;
+            }
+            .image-title{
+                color: white;
+            }
+        }
+        .reemplazados:hover {
+            background-color: rgb(63, 63, 63);
+            img {
+                opacity: 60%;
+            }
+            .image-title{
+                color: white;
+            }
+        }
+    }
+
+    
+    footer {
+        // position: relative;
+        p {
+            font-size: .9rem;
+            text-align: center;
+            padding:  .8rem 0 1rem 0;
+            color: gray;
+            
+            
         }
     }
 }
 
+// .grid-photos-biblioteca {
+//     z-index: 1;
+// }
+
+.makeFullScreen {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.noScroll {
+    overflow: hidden;
+}
 @import "mediaQuery";
 

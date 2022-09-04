@@ -10,7 +10,7 @@ function desktopGallery() {
 function mobileGallery() {
   return document.addEventListener("DOMContentLoaded", function(event) {
     Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'),
-    {linkImages:false, imageSize: 'contain'})
+    { loop:true,imageSize: 'contain',allowZoom: false})
   })
 }
 

@@ -212,7 +212,7 @@ body .grid-photos .reemplazados:hover .image-title {
 body footer p {
   font-size: .9rem;
   text-align: center;
-  padding: .8rem 0 1rem 0;
+  padding-bottom: 1.3rem;
   color: gray;
 }
 
@@ -283,7 +283,7 @@ body footer p {
     padding: 0 .5rem 0 .5rem;
   }
   body footer p {
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

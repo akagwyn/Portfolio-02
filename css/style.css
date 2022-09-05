@@ -45,8 +45,9 @@ a {
 
 body {
   position: relative;
-  background-color: #fafaf8;
+  background-color: #ffffff;
   font-family: 'Hind', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 
@@ -67,7 +68,11 @@ body nav a {
 }
 
 body nav .name {
-  font-weight: 600;
+  font-weight: 500;
+}
+
+body nav .ig {
+  color: #2c2c2c;
 }
 
 body header {
@@ -88,16 +93,17 @@ body header .title {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: .5rem;
+  color: #2c2c2c;
 }
 
 body header .description {
   text-align: left;
   margin: auto;
   width: auto;
+  color: #858080;
 }
 
 body .grid-photos {
-  z-index: 1;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,10 +117,17 @@ body .grid-photos {
 }
 
 body .grid-photos .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  overflow: hidden;
   width: 45%;
   margin: 2.5%;
+  overflow: hidden;
 }
 
 body .grid-photos .grid-item .image {
@@ -122,91 +135,36 @@ body .grid-photos .grid-item .image {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 body .grid-photos .grid-item .image-title {
-  color: transparent;
-  position: absolute;
-  font-size: 1rem;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
+  font-size: .9rem;
   text-align: center;
-  padding: 0 .5rem 0 .5rem;
+  color: #858080;
+  margin-top: .5rem;
+  font-weight: 300;
 }
 
-body .grid-photos .biblioteca:hover {
-  background-color: #2a2846;
+body .grid-photos-flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
 }
 
-body .grid-photos .biblioteca:hover img {
-  opacity: 60%;
+body .grid-photos-flex .chocolat-image {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-body .grid-photos .biblioteca:hover .image-title {
-  color: white;
-}
-
-body .grid-photos .cordoba:hover {
-  background-color: rgba(43, 92, 56, 0.89);
-}
-
-body .grid-photos .cordoba:hover img {
-  opacity: 60%;
-}
-
-body .grid-photos .cordoba:hover .image-title {
-  color: white;
-}
-
-body .grid-photos .arquitectura:hover {
-  background-color: #2a2846;
-}
-
-body .grid-photos .arquitectura:hover img {
-  opacity: 60%;
-}
-
-body .grid-photos .arquitectura:hover .image-title {
-  color: white;
-}
-
-body .grid-photos .buenos-aires:hover {
-  background-color: rgba(109, 109, 76, 0.774);
-}
-
-body .grid-photos .buenos-aires:hover img {
-  opacity: 60%;
-}
-
-body .grid-photos .buenos-aires:hover .image-title {
-  color: white;
-}
-
-body .grid-photos .interiores:hover {
-  background-color: rgba(70, 70, 40, 0.753);
-}
-
-body .grid-photos .interiores:hover img {
-  opacity: 60%;
-}
-
-body .grid-photos .interiores:hover .image-title {
-  color: white;
-}
-
-body .grid-photos .reemplazados:hover {
-  background-color: #3f3f3f;
-}
-
-body .grid-photos .reemplazados:hover img {
-  opacity: 60%;
-}
-
-body .grid-photos .reemplazados:hover .image-title {
-  color: white;
+body .grid-photos-flex img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: .5rem;
+  width: 100%;
+  height: 100%;
 }
 
 body footer p {
@@ -214,18 +172,6 @@ body footer p {
   text-align: center;
   padding-bottom: 1.3rem;
   color: gray;
-}
-
-.makeFullScreen {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.noScroll {
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -241,7 +187,7 @@ body footer p {
     margin: auto;
     padding: 3rem 0 3rem 0;
   }
-  body header .titulo {
+  body header .title {
     text-align: left;
     font-size: 1.5rem;
     font-weight: 500;
@@ -279,8 +225,9 @@ body footer p {
        object-fit: cover;
   }
   body .grid-photos .grid-item .image-title {
-    font-size: 1.5rem;
-    padding: 0 .5rem 0 .5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .5rem .5rem 0 .5rem;
   }
   body footer p {
     padding: 1rem 0 2rem 0;

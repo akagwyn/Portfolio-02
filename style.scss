@@ -1,4 +1,4 @@
-@import "biblioteca";
+@import "galleries";
 
 * {
     margin: 0;
@@ -14,20 +14,21 @@ body {
     background-color: #ffffff ;
     font-family: 'Hind', sans-serif;
     font-family: 'Roboto', sans-serif;
-    height: 100%;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
         
     nav {
         display: flex;
         justify-content: space-between;
-        margin: 1rem 5% 0.5rem 5%;
+        margin: 1rem 2.5% 0.5rem 2.5%;
 
         a {
-            color: rgb(0, 0, 0);
+            color: rgb(50, 50, 50);
             font-weight: 300;
             font-size: clamp(0.2rem,4vw,3rem);
         }
         .name {
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .ig {
@@ -39,9 +40,10 @@ body {
     header {
         display: flex;
         flex-direction: column;
-        width: 80vw;
-        margin-left: 5%;
-        padding: 3rem 0 2rem 0;
+        width: auto;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding: 3rem 0 1rem 0;
 
         .title {
             text-align: left;
@@ -73,17 +75,15 @@ body {
             margin: 2.5%;    
             overflow: hidden;
 
-            .image {
-                width: 100%;
+            img {
                 height: 100%;
-                object-fit: cover; 
-                overflow: hidden;
+                width: 100%;
             }
 
             .image-title {
                 font-size: .9rem;
                 text-align: center;
-                color: rgb(133,128,128);
+                color: rgb(100, 100, 100);
                 margin-top: .5rem ;
                 // text-transform: uppercase;
                 font-weight: 300;

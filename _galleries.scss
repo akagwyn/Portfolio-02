@@ -1,0 +1,54 @@
+
+
+.grid-photos-dg {
+    display:  grid;
+    padding: 2% 2.5% 2.5% 2.5%;
+    gap: 1rem;
+    
+    img {
+            width: 100%;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .chocolate-parent {
+        padding: 0;
+        margin:0;
+    }
+    .grid-photos-dg {
+        width: 80%;
+        grid-template-columns: repeat(5,2fr);
+        grid-template-rows: auto;
+        margin: auto;
+        padding: 0 2rem 0 2rem;
+
+        .chocolate.image {
+            margin: 0;
+            padding: 2rem;
+        }
+
+        img {  
+        margin: 0;
+        padding: 0;
+        // width: 25%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        }
+
+        .vertical {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+        .horizontal {
+            grid-column: span 2;
+        }
+        .square {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+    }
+}

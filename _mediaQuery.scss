@@ -31,8 +31,8 @@
         .container {
 
             nav {
-                padding: 0 5% 0 5%;
-                margin: 5rem 0 2rem 0;
+                padding: 0 10% 0 10%;
+                margin: 5rem 2rem 2rem 2rem;
 
                 a {
                     font-size: clamp(1rem,1vw,2rem);
@@ -42,25 +42,26 @@
         }
         .grid-photos {
             flex-direction: row;
-            flex-wrap: wrap;
-            
-            // margin: 0 2.5% 0 2.5%;
-            padding: 0 2.5% 0 2.5%;
-            width: auto;
+            // flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            // padding: 0 2.5% 0 2.5%;
+            width: 80%;
             
             .grid-item {
                 cursor: pointer;
-                // margin: 2.5%;
-                width: 20%;
-                // margin: 0;
+                width: 33.3%;
+                margin: 0;
+                padding: 2rem;
 
-                .image {
+                img {
+                    width: 100%;
                     object-fit: cover; 
                 }
                 
                 .image-title {
                     text-transform: uppercase;
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     padding: .5rem .5rem 0 .5rem;
                 }
                 

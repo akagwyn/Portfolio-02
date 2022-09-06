@@ -1,4 +1,4 @@
-@import "galleries";
+
 
 * {
     margin: 0;
@@ -10,10 +10,7 @@ a {
     text-decoration: none;
 }
 body {
-    position: relative;
     background-color: #ffffff ;
-    font-family: 'Hind', sans-serif;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Lato', sans-serif;
     height: 100vh;
         
@@ -25,7 +22,7 @@ body {
         a {
             color: rgb(50, 50, 50);
             font-weight: 300;
-            font-size: clamp(0.2rem,4vw,3rem);
+            font-size: clamp(0.2rem,4vw,1.5rem);
         }
         .name {
             font-weight: 600;
@@ -38,11 +35,7 @@ body {
     }
      
     header {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        margin: 0 5% 0 5%;
         padding: 3rem 0 1rem 0;
 
         .title {
@@ -55,8 +48,6 @@ body {
 
         .description {
             text-align: left;
-            margin: auto;
-            width: auto;
             color: rgb(133,128,128);
         }
     }
@@ -68,32 +59,23 @@ body {
         flex-wrap: wrap; 
     
         .grid-item {
-            display: flex;
-            flex-direction: column;
-            position: relative;
             width: 45%;
             margin: 2.5%;    
-            overflow: hidden;
 
             img {
                 height: 100%;
                 width: 100%;
             }
 
-            .image-title {
+            figcaption {
                 font-size: .9rem;
                 text-align: center;
                 color: rgb(100, 100, 100);
-                margin-top: .5rem ;
-                // text-transform: uppercase;
+                margin-top: .2rem ;
                 font-weight: 300;
 
             }
-
-            
         }
-
-        
     }
 
     .grid-photos-flex {
@@ -129,4 +111,5 @@ body {
 
 
 @import "mediaQuery";
+@import "galleries";
 

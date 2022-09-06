@@ -2,52 +2,18 @@
 
 
     body {
-        // overflow-x: auto;
-        // overflow-y: auto;
-        // height: 100vh;
-        // width: 100vw;
-        
-        header {
-            display: flex;
-            flex-direction: column;
-            width: 40vw;
-            margin: auto;
-            padding: 3rem 0 3rem 0;
-            .title {
-                text-align: left;
-                font-size: 1.5rem;
-                font-weight: 500;
-                margin-bottom: 2rem;
-
-            }
-
-            .descripcion {
-                text-align: left;
-                width: 50vw;
-                margin: auto;
-                width: auto;
-            }
+        nav {
+            padding: 0 10% 0 10%;
+            margin: 3.5rem 0rem 2rem 0rem;
+            font-size: 0.5rem;
         }
-        .container {
 
-            nav {
-                padding: 0 10% 0 10%;
-                margin: 5rem 2rem 2rem 2rem;
-
-                a {
-                    font-size: clamp(1rem,1vw,2rem);
-                
-                }
-            }
-        }
         .grid-photos {
-            flex-direction: row;
-            // flex-wrap: wrap;
-            justify-content: center;
+            // flex-direction: row;
+            // justify-content: center;
             margin: auto;
-            // padding: 0 2.5% 0 2.5%;
             width: 80%;
-            
+                    
             .grid-item {
                 cursor: pointer;
                 width: 33.3%;
@@ -56,27 +22,28 @@
 
                 img {
                     width: 100%;
-                    object-fit: cover; 
+                    // height: 100%;
+                    
                 }
-                
+                        
                 .image-title {
                     text-transform: uppercase;
                     font-size: 1.2rem;
                     padding: .5rem .5rem 0 .5rem;
                 }
-                
+                        
             }
-            
-           
-            
+                        
         }
+        
         footer {
             p {
                 padding: 1rem 0 2rem 0;
             }
         }
     }
-
-
 }
+
+
+
 
